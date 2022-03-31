@@ -1,0 +1,46 @@
+---
+title: "Lab 07 - R Shiny"
+author: |
+        | Insert team name here:
+        | Insert team member 1 here
+        | Insert team member 2 here
+        | Insert team member 3 here
+        | Insert team member 4 here
+date: "Insert date here"
+output: html_document
+runtime: shiny
+---
+
+### Load packages and data
+
+```{r load-packages, message = FALSE}
+library(tidyverse) 
+library(shiny)
+library(DT)
+```
+
+```{r load-data, message = FALSE}
+covid_cases <- read_csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv") 
+```
+
+### Exercise 1
+
+Remove this text, and add your answer for Exercise 1 here.
+Add code chunks as needed.
+
+### Exercise 2
+
+...
+
+### Exercise 3
+
+...
+
+
+### Exercise 4
+
+```{r load-us-data, eval = T, message = F}
+US_data <- read_csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv") 
+```
+
+...
